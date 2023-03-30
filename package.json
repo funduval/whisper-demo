@@ -1,11 +1,19 @@
 {
-  "name": "whisper-test",
+  "name": "code-assist",
   "version": "1.0.0",
   "description": "",
-  "main": "test.js",
+  "main": "infra/src/lambda-app.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "aws-cdk-lib": "^2.71.0",
+    "constructs": "^10.1.295"
+  },
+  "devDependencies": {
+    "aws-cdk": "^2.71.0"
+  }
 }
