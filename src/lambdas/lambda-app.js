@@ -30,9 +30,11 @@ export default async function updateHtml() {
       for (let i = 0; i < rawData.length; i++) {
         const firstColumnValue = rawData[i][Object.keys(rawData[i])[0]];
         const secondColumnValue = (secondColumnCounts[rawData[i][Object.keys(rawData[i])[1]]] / totalCount) * 100;
+        const thirdColumnValue = rawData[i][Object.keys(rawData[i])[1]];
         newArray.push({
           "name": firstColumnValue,
-          "share": secondColumnValue
+          "share": secondColumnValue,
+          "state": thirdColumnValue
         });
       }
 
